@@ -2,7 +2,7 @@
 
 I'm thrilled to announce the launch of my latest project - a React Native Weather App built entirely with TypeScript! 🚀
 
-![](<https://firebasestorage.googleapis.com/v0/b/react-native-ts-weather-app.appspot.com/o/promo%2Fweather%20app%20(1).png?alt=media&token=8dc6dd8b-ac8f-4a9b-8393-cf4bb812ecc1>)
+![](<https://firebasestorage.googleapis.com/v0/b/react-native-ts-weather-app.appspot.com/o/promo%2Fweather%20app%20(2).png?alt=media&token=0df91aed-23e9-4537-9a33-20acc1b538f4>)
 
 - [Click to watch Video Demo](https://www.youtube.com/watch?v=bNrQbNb6SHE)
 - [Download APK to test](https://drive.google.com/file/d/1wbShuZ0O962Hd3hoQsrJgOvPlPpFpvn9/view?usp=sharing)
