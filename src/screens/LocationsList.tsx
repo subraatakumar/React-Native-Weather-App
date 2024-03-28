@@ -1,8 +1,17 @@
 import {View, Text, Platform, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {FontAwesome} from '@expo/vector-icons';
+import {LocationData} from '@/types';
 
-const LocationsList = ({locations, handleLocation}) => {
+interface LocationsListProps {
+  locations: LocationData[];
+  handleLocation: (location: LocationData) => void;
+}
+
+const LocationsList: React.FC<LocationsListProps> = ({
+  locations,
+  handleLocation,
+}) => {
   return (
     <View
       className={` absolute w-full z-10 top-16 rounded-3xl bg-slate-300 ${
