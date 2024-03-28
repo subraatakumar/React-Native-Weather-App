@@ -1,8 +1,18 @@
 import {View, Text, TextInput, TouchableOpacity, Platform} from 'react-native';
-import React from 'react';
+import React, {Dispatch, SetStateAction} from 'react';
 import {FontAwesome5} from '@expo/vector-icons';
 
-const SearchBar = ({showSearchBar, setShowSearchBar, handleDebounce}) => {
+interface SearchBarProps {
+  showSearchBar: boolean;
+  setShowSearchBar: Dispatch<SetStateAction<boolean>>;
+  handleDebounce: (text: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({
+  showSearchBar,
+  setShowSearchBar,
+  handleDebounce,
+}) => {
   return (
     <View
       className={`flex-row justify-end items-center rounded-full ${

@@ -1,27 +1,35 @@
+export type WeatherCondition = {
+  text: string;
+  icon: string;
+};
+
+export type CurrentWeather = {
+  condition?: WeatherCondition;
+  temp_c: number;
+  wind_kph: number;
+  humidity: number;
+};
+
+export type Location = {
+  name: string;
+  country: string;
+};
+
+export type ForecastDay = {
+  date: string;
+  date_epoch: number;
+  day?: {
+    condition?: WeatherCondition;
+    avgtemp_c: number;
+  };
+};
+
+export type Forecast = {
+  forecastday?: ForecastDay[];
+};
+
 export type WeatherData = {
-  current?: {
-    condition?: {
-      text: string;
-      icon: string;
-    };
-    temp_c: number;
-    wind_kph: number;
-    humidity: number;
-  };
-  forecast?: {
-    forecastday?: {
-      date: string;
-      day?: {
-        condition?: {
-          text: string;
-          icon: string;
-        };
-        avgtemp_c: number;
-      };
-    }[];
-  };
-  location?: {
-    name: string;
-    country: string;
-  };
+  current?: CurrentWeather;
+  forecast?: Forecast;
+  location?: Location;
 };

@@ -1,9 +1,13 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
 import removeStartingDoubleSlash from '@/helpers/removeStartingDoubleSlash';
-import {Feather, Entypo, FontAwesome, FontAwesome5} from '@expo/vector-icons';
+import {Feather, Entypo} from '@expo/vector-icons';
+import {CurrentWeatherData} from '@/types/CurrentWeatherData';
 
-const CurrentWeather = ({current}) => {
+type CurrentWeatherProp = {
+  current?: CurrentWeatherData;
+};
+const CurrentWeather: React.FC<CurrentWeatherProp> = ({current}) => {
   return (
     <>
       {/* IMAGE VIEW */}
